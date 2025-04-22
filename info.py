@@ -59,8 +59,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://telegram:bHeYufR2bxeHngnv@cluster0.ct0uceq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://telegram:bHeYufR2bxeHngnv@cluster0.ct0uceq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "animestore")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'anime')
 
@@ -167,7 +166,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
+URL = environ.get("URL", "https://cooing-hildagarde-firsttgbot-f1ec4794.koyeb.app/")
 
 
 # Rename Info : If True Then Bot Rename File Else Not
